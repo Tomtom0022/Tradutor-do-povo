@@ -53,7 +53,8 @@ dicionario = {
     "pca": "Índice de Preços ao Consumidor: Mede a variação dos preços.",
     "ipca+": "IPCA mais: Investimento que paga taxa fixa + inflação (IPCA).",
     "pré-fixado": "Investimento com taxa de juros definida no momento da aplicação.",
-    "pós-fixado": "Investimento cuja rentabilidade depende de um índice (como a Selic)."
+    "selic": "A taxa que manda nos juros do brasil. Se ela sobe, tudo fica mais caro.",
+
 }
 
 palavra = st.text_input("digite o termo do mercado aqui").lower()
@@ -61,4 +62,4 @@ palavra = st.text_input("digite o termo do mercado aqui").lower()
 if palavra in dicionario:
     st.success(dicionario[palavra])
 elif palavra != "":
-    st.warning("Ainda não tenho essa. Me peça que eu adiciono!")
+    st.warning("Ainda não tenho essa. Me peça que eu adiciono!"),
